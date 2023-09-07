@@ -1,0 +1,111 @@
+﻿@model CRUD_WEB_API_SP_MVC.Models.Customer
+
+@{
+    ViewBag.Title = "Customer Details";
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/wwwroot/StyleSheet2.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowAllCustomerDetails</title>
+
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <div style="font-family:Arial Black;">
+        <h2 style="background-color: #1434A4; color: white; text-align: center; ">CUSTOMER DETAIL MANAGEMENT SYSTEM</h2>
+        @*<h2 style="text-align:center"></h2>*@
+        <p>
+            @*<p style="text-align:center">*@
+            @Html.ActionLink(linkText: "New Customer", actionName: "InsertCustomer", controllerName: "Customer")
+        </p>
+        <br />
+        <br />
+        <table border="1" align="center">
+            <tr>
+                <th style="background-color: #808080; color: white ">
+                    @Html.DisplayNameFor(model => model.Name)
+
+                </th>
+                <th style="background-color: #808080; color: white">
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+                <th style="background-color: #808080; color: white">
+                    @Html.DisplayNameFor(model => model.Mobileno)
+                </th>
+                <th style="background-color: #808080; color: white">
+                    @Html.DisplayNameFor(model => model.Birthdate)
+                </th>
+                <th style="background-color: #808080; color: white">
+                    @Html.DisplayNameFor(model => model.EmailID)
+                </th>
+                <th style="background-color: #808080; color: white">
+                    Operation
+                </th>
+            </tr>
+
+            @foreach (var item in Model.ShowallCustomer)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Mobileno)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Birthdate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmailID)
+                    </td>
+                    <td>
+
+                        @Html.ActionLink("Modify", "Edit", new { id = item.CustomerID }) |
+
+                        @Html.ActionLink("Detail", "Details", new { id = item.CustomerID }) |
+                        @*@Html.ActionLink("Remove", "Delete", new { id = item.CustomerID })*@
+                        @Html.ActionLink("Remove", "Delete", new { id = item.CustomerID },
+                        new { onclick = "return confirm('Are sure wants to delete?');" })
+                    </td>
+                </tr>
+
+            }
+        </table>
+        @if (TempData["result1"] != null)
+        {
+            <script type="text/javascript">
+
+                alert("Record Is Inserted Successfully");
+            </script>
+
+        }
+        @if (TempData["result2"] != null)
+        {
+            <script type="text/javascript">
+
+                alert("Record Is Updated Successfully");
+            </script>
+
+        }
+        @if (TempData["result3"] != null)
+        {
+            <script type="text/javascript">
+
+                alert("Record Is Deleted Successfully");
+            </script>
+
+        }
+        <br />
+        <br />
+
+    </div>
+</body>
+</html>  

@@ -1,0 +1,10 @@
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\bin\Debug\TestCRUD.exe.config
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\bin\Debug\TestCRUD.exe
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\bin\Debug\TestCRUD.pdb
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\obj\Debug\TestCRUD.csproj.AssemblyReference.cache
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\obj\Debug\TestCRUD.Properties.Resources.resources
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\obj\Debug\TestCRUD.csproj.GenerateResource.cache
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\obj\Debug\TestCRUD.csproj.CoreCompileInputs.cache
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\obj\Debug\TestCRUD.exe
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\obj\Debug\TestCRUD.pdb
+C:\Users\Amrutha Nannanan\OneDrive\Desktop\Claysys_Training\project phase1\TestCRUD\TestCRUD\obj\Debug\TestCRUD.Form2.resources

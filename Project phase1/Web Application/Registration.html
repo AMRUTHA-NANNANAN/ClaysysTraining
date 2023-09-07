@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta nmae="viewport" content="width=device-width" charset="utf-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="stylereg.css" />
+    <script src="https://kit.fontawesome.com/8cc2a5bf72.js" crossorigin="anonymous"></script>
+    <script defer src="reg.js"></script>
+
+
+
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <label class="logo">TechVerse</label>
+            <ul>
+                <li><a href="navigationbar.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div class="wrapper">
+            <div class="register">
+                <form action="" id="form">
+                    <h1>Registration Page</h1>
+
+                    <div class="input-form">
+
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname">
+                        <p>Error Message</p>
+                    </div>
+
+                    <div class="input-form">
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname">
+                        <p>Error Message</p>
+
+                    </div>
+
+                    <div class="input-form">
+                        <label>Date :</label>
+                        <input type="date" id="date" name="date" max="2006-04-25"/>
+                    </div>
+
+                    <div class="input-form">
+                        <label>Age :</label>
+                        <input type="number" readonly id="age" name="age" min="18" max="45" onmousemove="Findage()">
+                        <p>Error Message</p>
+
+
+                    </div>
+
+                    <div class="input-for">
+                        <label>Gender :</label>
+                        &nbsp;
+                        <input type="radio" name="gender" id="gender" />
+                        &nbsp;  &nbsp;
+                        <span id="male"> Male</span>
+                        &nbsp;  &nbsp;  &nbsp; &nbsp;
+                        <input type="radio" name="gender" id="gender" />
+                        &nbsp;
+                        <span id="male"> Female</span>
+                        &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="gender" id="gender" />
+                        &nbsp;
+                        <span id="male">Other</span>
+
+                    </div>
+
+                    <div class="input-form">
+                        <br /><label for="phone">Phone:</label>
+                        <input type="number" id="phone" name="phone">
+                        <p>Error Message</p>
+
+                    </div>
+
+
+                    <div class="input-form">
+                        <br /> <label>Email :</label>
+                        <input type="text" name="email" id="email" placeholder="abc@gmail.com" onfocusout="myfunction()" /><br />
+                        <p>Error Message</p>
+
+                    </div>
+                    <div class="input-form">
+                        <br /> <label>Address :</label>
+                        <textarea rows="4" cols="50" name="address" id="address" placeholder="Address"></textarea><br />
+                         <p>Error Message</p>
+
+                    </div>
+                    <br />
+
+                    <br />
+                    <div class="input-form">
+
+                        <br /> <label for="state">State :</label>
+                        <select id="state" onchange="populateCities()">
+                            <option value="">Select your state</option>
+                            <option value="assam">Assam</option>
+                            <option value="goa">Goa</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="sikkim">Sikkim</option>
+
+
+                        </select>
+                        <p>Error Message</p>
+                    </div>
+                    <div class="input-form">
+
+                        <br /> <label for="city">City :</label>
+                        <select id="city">
+                            <option value="">Select a city</option>
+                        </select>
+                        <p>Error Message</p>
+                    </div>
+
+
+                    <div class="input-form">
+                        <br /> <label>Username :</label>
+                        <input type="text" placeholder="Username" id="username" name="username" />
+                        <p>Error Message</p>
+                    </div>
+                    <div class="input-form">
+                        <br /><label for="psw">Password :</label>
+                        <input type="password" placeholder="Password" name="password" id="password"><br />
+                        <p>Error Message</p>
+
+                    </div>
+                    <div class="input-form">
+                        <label>Confirm Password :</label>
+
+                        <input type="password" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword">
+                        <p>Error Message</p>
+                    </div>
+
+
+                    <button type="submit" id="submit">Register</button>
+
+                </form>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <footer>
+        <p>@Copyright TechVerse 2023-All Right Reserved</p>
+        <p>3630 East, 4th Ave, Vancouver,America</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </footer>
+</body>
+</html>

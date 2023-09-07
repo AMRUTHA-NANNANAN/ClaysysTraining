@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="stylecontact.css"/>
+    <title>Contact us</title>
+    <script src="https://kit.fontawesome.com/8cc2a5bf72.js" crossorigin="anonymous"></script>
+    <script defer src="contactus.js"></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <label class="logo">TechVerse</label>
+            <ul>
+                <li><a href="navigationbar.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="contact">
+        <div class="content">
+            <h2>
+                Contact Us
+            </h2>
+            <p>
+                Want to get in touch? We would love to hear from you.Here is how you can reach us...
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3><b>Address</b></h3>
+                        <p>
+                            3630 East city road, <br>4th Ave square,<br> Vancouver,<br>America
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3><b>Phone</b></h3>
+                        <p>947348839</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3><b>Email</b></h3>
+
+                        <p>universalTech827@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactform">
+                <form action="/" method="post" name="form" onsubmit="return validate()">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" id="fullname" name="fullname" placeholder="Full Name" />
+
+
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" id="email" name="email" placeholder="Email" onfocusout="myfunction()" />
+
+
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="msg" id="msg" placeholder="Type your message" />
+
+
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Submit" />
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <p>@Copyright TechVerse 2023-All Right Reserved</p>
+        <p>3630 East, 4th Ave, Vancouver,America</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </footer>
+</body>
+</html>

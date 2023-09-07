@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_imgModelStoreContainer" CdmEntityContainer="db_imgEntities">
+    <EntitySetMapping Name="tbl_file">
+      <EntityTypeMapping TypeName="db_imgModel.tbl_file">
+        <MappingFragment StoreEntitySet="tbl_file">
+          <ScalarProperty Name="file_id" ColumnName="file_id" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="file_ext" ColumnName="file_ext" />
+          <ScalarProperty Name="file_base6" ColumnName="file_base6" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
